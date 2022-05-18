@@ -20,7 +20,7 @@ file_name = 'mention_id.txt'
 #Stores the mention id that has already been replied to within a file
 def store_mention(mention):
     f_write = open(file_name, 'a')
-    f_write.write(str(mention))
+    f_write.write(str(mention) + '\n')
     f_write.close()
     return
 
